@@ -13,18 +13,18 @@ class AuthFilter implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
 
-        if (!empty($arguments) && $arguments[0] == 'survey') {
-            if (!session()->login_survey) {
-                return redirect()->to(getenv('AKSES_PAGE'));
-            }
-        } else if (!session()->logged_in) {
-            // return redirect()->to(site_url() . getenv('AKSES_PAGE'));
+        // if (!empty($arguments) && $arguments[0] == 'survey') {
+        //     if (!session()->login_survey) {
+        //         return redirect()->to(getenv('AKSES_PAGE'));
+        //     }
+        // }
+
+        if (!session()->logged_in) {
             return redirect()->to(getenv('AKSES_PAGE'));
         }
 
         if (session()->nama)
             define('session_nama', session()->nama);
-
 
         // if (!empty($arguments) && page_access($arguments[0]) == false) {
         //     // dj(page_access($arguments[0], session()->level));
