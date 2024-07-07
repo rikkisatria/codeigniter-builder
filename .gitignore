@@ -1,0 +1,21 @@
+/public/uploads/
+/writable/cache/
+/writable/debugbar/
+/writable/logs/
+/writable/session/
+/writable/tmp/
+/env
+/vendor/
+/node_modules/
+!.htaccess
+
+# MacOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux specific files
+*~

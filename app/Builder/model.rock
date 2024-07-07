@@ -1,0 +1,10 @@
+<?php
+namespace App\Models;
+use CodeIgniter\Model;
+class {@model_name} extends Model
+{
+    protected $table = '{@table_name}';
+    protected $primaryKey = 'id';
+    protected $useAutoIncrement = false;
+    protected $allowedFields = {@column};
+}
